@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="@+id/middle_app"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_app_a" />
 
     <app.exploitr.seamless.graphics.TestBlurBG2
         android:id="@+id/middle_app"
@@ -27,7 +27,7 @@
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_app_b" />
 
     <app.exploitr.seamless.graphics.TestBlurBG2
         android:id="@+id/bottom_app"
@@ -38,6 +38,33 @@
         app:layout_constraintStart_toStartOf="@+id/middle_app"
         app:layout_constraintTop_toBottomOf="@+id/middle_app"
         app:layout_constraintVertical_bias="0.15"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_app_c" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/middle_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/gesture" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_app"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/gesture_hz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
